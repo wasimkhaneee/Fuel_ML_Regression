@@ -2,6 +2,16 @@
 import pickle
 import streamlit as st
 
+from zipfile import ZipFile
+
+
+# loading the temp.zip and creating a zip object
+with ZipFile("regression_walmart_rf.pkl.zip", 'r') as zObject:
+  
+    # Extracting all the members of the zip 
+    # into a specific location.
+    zObject.extractall()
+
 # loading the trained model
 pickle_in = open('regression_walmart_rf.pkl', 'rb')
 regressor = pickle.load(pickle_in)
