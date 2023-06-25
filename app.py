@@ -58,7 +58,7 @@ def main():
 
     # when 'Predict' is clicked, make the prediction and store it
     if st.button("Predict"):
-        result = prediction(Store, Holiday, Temperature, Fuel_Price, CPI, Unemployment, Day, Week,Month,Property_Area,Education)
+        result = prediction(Store, Holiday, Temperature, Fuel_Price, CPI, Unemployment, Day, Week,Month,Year)
         st.success('Your Walmart Sale Prediction is {}'.format(result))
         print(result)
 
