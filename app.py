@@ -26,10 +26,10 @@ def prediction(Store, Holiday, Temperature, Fuel_Price, CPI, Unemployment, Day, 
   else:
       Holiday_Flag = 0
     # Making predictions
-    prediction = regressor.predict(
+  prediction = regressor.predict(
         [[Store, Holiday_Flag, Temperature, Fuel_Price, CPI, Unemployment, Day, Week,Month,Year]])
 
-    return prediction
+  return prediction
 
 
 # this is the main function in which we define our webpage
