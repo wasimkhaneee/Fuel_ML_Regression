@@ -3,4 +3,5 @@ numpy
 matplotlib
 seaborn
 pickle5
+zipfile
 scikit-learn
