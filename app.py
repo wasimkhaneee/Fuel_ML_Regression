@@ -23,7 +23,7 @@ def prediction(Store, Holiday, Temperature, Fuel_Price, CPI, Unemployment, Day, 
   Holiday_Flag = 0  
   if Holiday == "Holiday":
       Holiday_Flag = 1
-    else:
+  else:
       Holiday_Flag = 0
     # Making predictions
     prediction = regressor.predict(
