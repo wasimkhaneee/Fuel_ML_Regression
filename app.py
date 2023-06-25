@@ -20,7 +20,7 @@ regressor = pickle.load(pickle_in)
 
 # defining the function which will make the prediction using the data which the user inputs
 def prediction(Store, Holiday, Temperature, Fuel_Price, CPI, Unemployment, Day, Week,Month,Year):
-    if Holiday_Flag == "Holiday":
+    if Holiday == "Holiday":
       Holiday_Flag = 1
     else:
       Holiday_Flag = 0
